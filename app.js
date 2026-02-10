@@ -2,7 +2,7 @@ require('dotenv').config();
 const express = require('express');
 const bodyParser = require('express').json;
 const { gcdArray, lcmArray, isPrime, fibonacciSeries } = require('./helpers/math');
-const { askGemini } = require('./helpers/ai');
+const { askGemini } = require('./ai');
 
 const app = express();
 app.use(bodyParser({ limit: '1mb' }));
