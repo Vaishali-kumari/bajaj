@@ -1,7 +1,7 @@
 require('dotenv').config();
 const express = require('express');
 const bodyParser = require('express').json;
-const { gcdArray, lcmArray, isPrime, fibonacciSeries } = require('./helpers/math');
+const { gcdArray, lcmArray, isPrime, fibonacciSeries } = require('./math');
 const { askGemini } = require('./ai');
 
 const app = express();
